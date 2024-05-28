@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Komore.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Komore"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Komore">
+
+    <TabBar>
+        <Tab Title="Library" Icon="library.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Library}"/>
+        </Tab>
+        <Tab Title="History" Icon="history.png">
+            <ShellContent ContentTemplate="{DataTemplate local:History}"/>
+        </Tab>
+        <Tab Title="Extensions" Icon="blocks.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Extensions}"/>
+        </Tab>
+        <Tab Title="Settings" Icon="settings.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Settings}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>
